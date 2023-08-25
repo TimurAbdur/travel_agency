@@ -71,6 +71,7 @@
 
 .box-list__item input {
     margin-right: 15px;
+    user-select: none;
 }
 
 .about-us__content-statistics {
@@ -173,7 +174,7 @@
         border-color: #b3d7ff;
       }
       
-    .box-list__item inpu{
+    .box-list__item input{
         margin-right: 8px;
     }
     .about-us__content-subtitle {
