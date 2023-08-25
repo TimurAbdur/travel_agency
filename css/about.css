@@ -1,0 +1,123 @@
+.about {
+    margin-block: -120px 100px;
+}
+
+.about__btns {
+    display: flex;
+    column-gap: 10px;
+}
+
+.about__btn {
+    width: 120px;
+    height: 45px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 4px 4px 0px 0px;
+    background: #FFF;
+    color: #1F3347;
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.about__btn:hover {
+    opacity: 0.8;
+}
+
+.about__btn--active {
+    background-color: var(--accent-color);
+}
+
+.about__content {
+    background: #FFF;
+    box-shadow: 0px 6px 24px 0px #E4E2EE;
+    padding: 38px 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: end;
+}
+
+.about__content-title { 
+    color: #1F3347;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.about__content-input {
+    border-radius: 4px;
+    box-shadow: 0px 6px 24px 0px #E4E2EE;
+    padding: 20px 0 20px 10px;
+    color: #1F3347;
+}
+
+@media (max-width: 1320px) {
+    .about__content {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;  
+    }    
+}
+
+@media (max-width: 768px) {
+    .about__content {
+        grid-template-columns: repeat(2, 1fr); 
+    }    
+}
+
+
+@media (max-width: 540px) {
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: start;
+    }    
+    .about__content-item {
+        width: 100%;
+    }
+
+    .about__content-input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 475px) {
+    .about__btn {
+        width: 80px;
+        height: 40px;
+        column-gap: 8px;
+        font-size: 12px;
+    }
+
+    .about__btn img {
+        height: 20px;
+    }
+
+    .about__content {
+        padding: 30px 20px;
+    }
+
+    .about__content-title {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    
+    .about__content-input {
+        border-radius: 4px;
+        padding: 10px 0 10px 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about__btn {
+        width: 80px;
+        column-gap: 6px;
+        font-size: 10px;
+    }
+
+    .about__btn img {
+        height: 15px;
+    }
+}
